@@ -2,4 +2,4 @@
 
 Website showcasing my work - resume, CV, projects, and recognition
 
-[website](jennielim.github.io)
+[website](https://jennielim.github.io/index.html)
