@@ -81,8 +81,8 @@
 								<header>
 								<!-- EDUCATION -->
 								<h2> <a class="scrolly" id = "education" href = "#CV">Education</a></h2>
-									<!-- UMN -->
 									<div class="slideshow-container">
+										<!-- UMN -->
 										<div class="fade mySlides">
 											<h3 style="margin:0; float: left"><a target="_blank" href="images/jennie_lim_cs_transcript.pdf">UNIVERSITY OF MINNESOTA, TWIN CITIES</a></h3>
 											<h3 style="margin:0; float: right">SEPT '20 - MAY '24</h3>
@@ -125,34 +125,6 @@
 										<span class="dot" onclick="currentSlide(1)"></span>
 										<span class="dot" onclick="currentSlide(2)"></span>
 									</div>
-									<script>
-										var slideIndex = 1;
-										showSlides(slideIndex);
-										
-										function plusSlides(n) {
-										  showSlides(slideIndex += n);
-										}
-										
-										function currentSlide(n) {
-										  showSlides(slideIndex = n);
-										}
-										
-										function showSlides(n) {
-										  var i;
-										  var slides = document.getElementsByClassName("mySlides");
-										  var dots = document.getElementsByClassName("dot");
-										  if (n > slides.length) {slideIndex = 1}    
-										  if (n < 1) {slideIndex = slides.length}
-										  for (i = 0; i < slides.length; i++) {
-											  slides[i].style.display = "none";  
-										  }
-										  for (i = 0; i < dots.length; i++) {
-											  dots[i].className = dots[i].className.replace(" active", "");
-										  }
-										  slides[slideIndex-1].style.display = "block";  
-										  dots[slideIndex-1].className += " active";
-										}
-									</script>
 								</header>
 
 								<hr id = "Skills">
@@ -198,6 +170,7 @@
 												<p style="margin:0">↳ &nbsp; Planned and delivered on tasks</p>
 
 											</li>
+											<span id="dots"></span><span id="more">
 											<li><subtitle>Technologies Used:</subtitle> 
 												<p style="margin:0">↳ &nbsp; React, Java, Groovy, Git, Cloud Foundry, Gradle, SonarQube, Artifactory, Jenkins</p>
 											</li>										
@@ -211,6 +184,8 @@
 												<p style="margin:0">↳ &nbsp; Communication and recognizing team members’ efforts are key</p>
 											</li>
 										</ul>
+											</span>
+										<button class="button" onclick="myFunction()" id="myBtn">Technology, Skills, and Takeaways</button>
 										</div>
 									
 										<!-- Student Job -->
@@ -229,6 +204,7 @@
 												<p style="margin:0">↳ &nbsp; Create and style new pages to be used as templates</p>
 												<p style="margin:0">↳ &nbsp; Meetings with team using agile methodologies and work together to solve barriers </p>
 											</li>
+											<span id="dots2"></span><span id="more2">
 											<li><subtitle>Technologies Used:</subtitle> 
 												<p style="margin:0">↳ &nbsp; CSS, HTML, Drupal, Docker, Git, Jira</p>
 											</li>										
@@ -239,6 +215,8 @@
 												<p style="margin:0">↳ &nbsp; Communicate well with team to account for remote work setting </p>
 											</li>
 										</ul>
+											</span>
+										<button class="button" onclick="myFunction2()" id="myBtn2">Technology and Takeaways</button>
 										</div>
 
 										<!-- TA -->
@@ -257,13 +235,17 @@
 											</li>										
 											<li><subtitle>Technologies Used:</subtitle> 
 												<p style="margin:0">↳ &nbsp; Python, Command line arguments on terminal, Zoom, Gradescope, Google Docs, and Google Sheets</p>
-											</li>										
+											</li>	
+											<span id="dots3"></span><span id="more3">									
 											<li><subtitle>Takeaways:</subtitle> 
 												<p style="margin:0">↳ &nbsp; How to break down and concisely explain concepts</p>
 												<p style="margin:0">↳ &nbsp; Patience when debugging and helping students</p>
 												<p style="margin:0">↳ &nbsp; How to ask good questions and approach problems as a student from a TA's perspecitve</p>
 											</li>
 										</ul>
+									</span>
+									<button class="button" style="margin-top:2.4rem" onclick="myFunction3()" id="myBtn3">Takeaways</button>
+
 										</div>
 
 										<!-- Law School -->
@@ -280,7 +262,7 @@
 												</li>										
 												<li><subtitle>Takeaways:</subtitle> 
 													<p style="margin:0">↳ &nbsp; The impact of supportive coworkers and environment makes a world of a difference</p>
-													<p style="margin:0">↳ &nbsp; Learned about the ins and outs of recruiting and admittance of students to a school</p>
+													<p style="margin-bottom: 5.05rem;">↳ &nbsp; Learned about the ins and outs of recruiting and admittance of students to a school</p>
 												</li>
 											</ul>
 										</div>
@@ -298,7 +280,7 @@
 												</li>										
 												<li><subtitle>Takeaways:</subtitle> 
 													<p style="margin:0">↳ &nbsp; Recognized the importance of communication within a team environment</p>
-													<p style="margin:0">↳ &nbsp; Recognized the importance of delivering indivdual tasks well in a collaborative space</p>
+													<p style="margin-bottom: 9.8rem;">↳ &nbsp; Recognized the importance of delivering indivdual tasks well in a collaborative space</p>
 												</li>
 											</ul>
 										</div>
@@ -316,7 +298,7 @@
 												</li>										
 												<li><subtitle>Takeaways:</subtitle> 
 													<p style="margin:0">↳ &nbsp; Gained the courage to ask questions</p>
-													<p style="margin:0">↳ &nbsp; Learned the process of different specialities within health care working together to produce a common goal</p>
+													<p style="margin-bottom: 9.8rem;">↳ &nbsp; Learned the process of different specialities within health care working together to produce a common goal</p>
 												</li>
 											</ul>
 										</div>
@@ -334,7 +316,7 @@
 												</li>										
 												<li><subtitle>Takeaways:</subtitle> 
 													<p style="margin:0">↳ &nbsp; Gained a wider persceptive from learning about the different lives and background of coworkers</p>
-													<p style="margin:0">↳ &nbsp; Appreciation for those who work in grocery stores</p>
+													<p style="margin-bottom: 9.8rem;">↳ &nbsp; Appreciation for those who work in grocery stores</p>
 												</li>
 											</ul>
 										</div>
@@ -352,14 +334,14 @@
 												</li>										
 												<li><subtitle>Takeaways:</subtitle> 
 													<p style="margin:0">↳ &nbsp; Overcame shyness and became open to speaking with strangers</p>
-													<p style="margin:0">↳ &nbsp; Appreciation the hard work of service workers</p>
+													<p style="margin-bottom: 9.8rem;">↳ &nbsp; Appreciation the hard work of service workers</p>
 												</li>
 											</ul>
 										</div>
 
 										<!-- Next/prev buttons -->
-										<a class="button" style="float:left" href = "#WorkExperience" onclick="plusSlides2(-1)">&#10094;</a>
-										<a class="button" style="float:right" href = "#WorkExperience" onclick="plusSlides2(1)">&#10095;</a>
+										<a class="button" style="float:left" onclick="plusSlides2(-1)">&#10094;</a>
+										<a class="button" style="float:right" onclick="plusSlides2(1)">&#10095;</a>
 									</div>
 									
 									<!-- Dots/bullets/indicators -->
@@ -373,38 +355,6 @@
 										<span class="dot2" onclick="currentSlide2(7)"></span>
 										<span class="dot2" onclick="currentSlide2(8)"></span>
 									</div>
-									<script>
-										var slideIndex2 = 1;
-										showSlides2(slideIndex2);
-										
-										function plusSlides2(n) {
-										  showSlides2(slideIndex2 += n);
-										}
-										
-										function currentSlide2(n) {
-										  showSlides2(slideIndex2 = n);
-										}
-										
-										function showSlides2(n) {
-										  var i;
-										  var slides = document.getElementsByClassName("mySlides2");
-										  var dots = document.getElementsByClassName("dot2");
-										  if (n > slides.length) {slideIndex2 = 1}    
-										  if (n < 1) {slideIndex2 = slides.length}
-										//   set all slides to none
-										  for (i = 0; i < slides.length; i++) {
-											  slides[i].style.display = "none";  
-										  }
-										//   set all dots to ""
-										  for (i = 0; i < dots.length; i++) {
-											  dots[i].className = dots[i].className.replace(" active", "");
-										  }
-										// displaying slide
-										  slides[slideIndex2-1].style.display = "block";  
-										// setting dot to active
-										  dots[slideIndex2-1].className += " active";
-										}
-									</script>
 								</header>
 
 								<hr id = "VolunteerExperience">
@@ -479,34 +429,6 @@
 										<span class="dot3" onclick="currentSlide3(2)"></span>
 										<span class="dot3" onclick="currentSlide3(3)"></span>
 									</div>
-									<script>
-										var slideIndex3 = 1;
-										showSlides3(slideIndex3);
-										
-										function plusSlides3(n) {
-										  showSlides3(slideIndex3 += n);
-										}
-										
-										function currentSlide3(n) {
-										  showSlides3(slideIndex3 = n);
-										}
-										
-										function showSlides3(n) {
-										  var i;
-										  var slides = document.getElementsByClassName("mySlides3");
-										  var dots = document.getElementsByClassName("dot3");
-										  if (n > slides.length) {slideIndex3 = 1}    
-										  if (n < 1) {slideIndex3 = slides.length}
-										  for (i = 0; i < slides.length; i++) {
-											  slides[i].style.display = "none";  
-										  }
-										  for (i = 0; i < dots.length; i++) {
-											  dots[i].className = dots[i].className.replace(" active", "");
-										  }
-										  slides[slideIndex3-1].style.display = "block";  
-										  dots[slideIndex3-1].className += " active";
-										}
-									</script>
 								</header>
 
 								<hr id = "Hobbies">
@@ -541,9 +463,8 @@
 				<ul><li><a href="#header">About Me</a></li><li><a href="generic.html">Projects</a></li><li><a href="elements.html">Recognition and Awards</a></li><li>Contact Me @ <a href="mailto: JennieGLim1@gmail.com">JennieGLim1@gmail.com</a></li></ul>
 			</div>
 			
-
-
 		<!-- Scripts -->
+			<script src="assets/js/slides.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>

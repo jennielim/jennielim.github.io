@@ -1,7 +1,12 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
+/* for read more buttons */
+#more, #more2, #more3, #more4, #more5, #more5, #more6, #more7, #more8 {
+	display: none;
+}
 
+/* slideshow */
 .fade {
 	animation-name: fade;
 	animation-duration: 0.5s;
@@ -12,36 +17,18 @@
 	to {opacity: 1}
   }
 
-/* Slideshow container */
 .slideshow-container {
 	position: relative;
-	/* background: #f1f1f1f1; */
   }
   
-  /* Slides */
 .mySlides {
 	display: none;
-	/* padding: 80px; */
 	text-align: center;
-  }
-
-.mySlides2 {
-	display: none;
-	/* padding: 80px; */
-	text-align: center;
-	}
-
-.mySlides3 {
-	display: none;
-	/* padding: 80px; */
-	text-align: center;
-	}
+}
   
-  /* Next & previous buttons */
-  .prev, .next {
+.prev, .next {
 	cursor: pointer;
 	position: absolute;
-	/* top: 50%; */
 	width: auto;
 	margin-top: -30px;
 	padding: 16px;
@@ -52,7 +39,6 @@
 	user-select: none;
   }
   
-  /* Position the "next button" to the right */
   .next {
 	position: absolute;
 	right: 0;
@@ -63,43 +49,12 @@
 	left: 0;
   }
   
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-	background-color: rgba(0,0,0,0.8);
-	color: white;
-  }
-  
-  /* The dot/bullet/indicator container */
   .dot-container {
 	text-align: center;
 	padding: 20px;
-	/* background: #ddd; */
   }
   
-  /* The dots/bullets/indicators */
-  .dot {
-	cursor: pointer;
-	height: 10px;
-	width: 10px;
-	margin: 0 2px;
-	background-color: #bbb;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
-  }
-
-  .dot2 {
-	cursor: pointer;
-	height: 10px;
-	width: 10px;
-	margin: 0 2px;
-	background-color: #bbb;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
-  }
-
-  .dot3{
+  .dot, .dot2, .dot3 {
 	cursor: pointer;
 	height: 10px;
 	width: 10px;
@@ -110,20 +65,11 @@
 	transition: background-color 0.6s ease;
   }
   
-  /* Add a background color to the active dot/circle */
   .active, .dot:hover {
 	background-color: #717171;
   }
   
-subtitle {
-	font-family: "Source Sans Pro", Helvetica, sans-serif;
-	font-weight: 900;
-	line-height: 1.5;
-	letter-spacing: 0.075em;
-	text-transform: uppercase;
-	margin: 0 0 1rem 0;
-}
-  
+/* general format */
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -187,6 +133,15 @@ input, select, textarea {
 	-webkit-appearance: none;
 	-ms-appearance: none;
 	appearance: none;
+}
+
+subtitle {
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-weight: 900;
+	line-height: 1.5;
+	letter-spacing: 0.075em;
+	text-transform: uppercase;
+	margin: 0 0 1rem 0;
 }
 
 /* Basic */
@@ -276,8 +231,6 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		/* border-bottom: dotted 1px; */
-		/* text-decoration: none; */
 	}
 
 		a:hover {
@@ -355,7 +308,6 @@ input, select, textarea {
 
 	blockquote {
 		border-left: solid 4px;
-		/* font-style: italic; */
 		margin: 0 0 2rem 0;
 		padding: 0.5rem 0 0.5rem 2rem;
 	}
