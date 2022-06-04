@@ -63,6 +63,9 @@
 
 .slidebutton {
 	margin-top: 25%;
+	height:2rem !important;
+	width:2rem !important;
+	line-height:2rem !important;
 }
 
 .other-container{
@@ -73,7 +76,7 @@
 .slideshow-container {
 	position: relative;  
 	float: left;
-	width: 90%;
+	width: 85%;
 	margin-left: 3%;
   }
 
@@ -108,10 +111,10 @@
 		display:none;
 	}
 	.slideshow-container {
-		width: 90%;
+		width: 85%;
 	  }
 	  .slidebutton {
-		  margin-top: 20%;
+		  margin-top: 15%;
 	  }
   }
 
@@ -347,7 +350,7 @@ pi {
 	}
 
 	p {
-		text-align: justify;
+		text-align: left;
 		margin: 0 0 2rem 0;
 	}
 

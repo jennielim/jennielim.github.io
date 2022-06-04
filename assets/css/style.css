@@ -131,9 +131,26 @@ a > span:hover {
   display: block;
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 650px) {
   div.tl {
     display: none;
   }
 }
 
+@media screen and (max-width: 850px) {
+  div.tl {
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  div.tl {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  div.tl {
+    font-size: 75%;
+  }
+}
