@@ -3,6 +3,9 @@
 
 
 
+#myBtn, #myBtn2, #myBtn3 {
+	margin-left:1rem;
+}
 #topButton {
 	display: none;
 	position: fixed;
@@ -87,6 +90,9 @@
 	  .slidebutton {
 		  margin-top: 75%;
 	  }
+	  #myBtn, #myBtn2, #myBtn3 {
+		margin-left:0rem;
+	}
   }
 
   @media screen and (min-width: 600px) {
@@ -97,14 +103,12 @@
 		  margin-top: 50%;
 	  }
   }
-  /* @media screen and (min-width: 800px) {
-	.slideshow-container {
-		width: 90%;
-	  }
-	  .slidebutton {
-		  margin-top: 15%;
-	  }
-  } */
+
+  @media screen and (min-width: 700px) {
+	#myBtn, #myBtn2, #myBtn3 {
+		margin-left:1rem;
+	}
+  }
 
   @media screen and (min-width: 800px) {
 	.timeline-wrapper {
