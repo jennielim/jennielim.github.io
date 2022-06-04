@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+		<link rel="stylesheet" href="assets/css/style.css">
 	</head>
 	<body class="is-preload">
 		
@@ -13,11 +15,11 @@
 			<div id="wrapper" img_src="images/skyline.jpg">
 				<!-- Intro -->
 					<div id="intro" class="fade-in">
-						<h1 style="top: 50%;position: absolute;">Jennie Lim</h1>
+						<h1 style="top: 50%;">Jennie Lim</h1>
 						<p></p>
 						<p></p>
 						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Top</a></li>
 						</ul>
 					</div>
 
@@ -44,14 +46,162 @@
 					<div id="main">
 						<!-- INTRO -->
 							<article class="post featured">
-								<header class="major">
+								<header style="margin:0" class="major">
 									<div class="box">
-										<span><b>Skip to: &nbsp;</b> <a class="scrolly" href = "#introduction"> At a Glance </a> &nbsp; ♡ &nbsp; <a class="scrolly" target="_blank" href="images/jennie_lim_resume.pdf"> Resume </a> &nbsp; ♡ &nbsp; <a class="scrolly" href = "#CV"> CV </a></span></div>
-									<h2 id="introduction">At a Glance</h2>
+										<span><subtitle>Skip to: &nbsp;</subtitle> <a class="scrolly" href = "#introduction"> At a Glance &nbsp;</a><pi class="fa-solid fa-heart fa"></pi><a class="scrolly" target="_blank" href="images/jennie_lim_resume.pdf"> &nbsp; Resume &nbsp;</a><pi class="fa-solid fa-heart fa"></pi><a class="scrolly" href = "#CV"> &nbsp; CV </a></span></div>
+									<h2 class="anchor" id="introduction">At a Glance</h2>
 									</header>
+									<div class="tl timeline-wrapper clearfix">
+										<div class="timeline-content-day">
+											<div class="timeline-line"></div>
+											<div class="timeline-content-item active" data-timeline="hour-8">
+												<span style="font-size: 85%;">Start</span>
+												<div class="timeline-content-item-reveal">
+													<a>
+														<span>My Timeline</span>
+													</a>
+												</div>
+											</div>
+									
+											<!-- <div class="timeline-content-item" data-timeline="hour-9">
+												<span style="font-size: 85%;">5/02</span>
+												<div class="timeline-content-item-reveal">
+													<a>
+														<span>Born in Aberdeen, SD</span>
+													</a>
+												</div>
+											</div>
+									
+											<div class="timeline-content-item" data-timeline="hour-10">
+												<span style="font-size: 85%;">9/06</span>
+												<div class="timeline-content-item-reveal">
+													<a>
+														<span>Moved to Mankato, MN</span>
+													</a>
+												</div>
+											</div> -->
+									
+											<div class="timeline-content-item" data-timeline="hour-11">
+												<span style="font-size: 85%;"><a class="scrolly" onclick="currentSlide(2)" href="#education">9/16</a></span>
+												<div class="timeline-content-item-reveal">
+													<a class="scrolly" onclick="currentSlide(2)" href="#education">
+														<span>Began attending Mankato West High School</span>
+													</a>
+												</div>
+											</div>
+									
+											<div class="timeline-content-item" data-timeline="hour-12">
+												<span style="font-size: 85%;"><a class="scrolly" onclick="currentSlide2(8)" href="#WorkExperience">6/18</a></span>
+												<div class="timeline-content-item-reveal">
+													<a class="scrolly" onclick="currentSlide2(8)" href="#WorkExperience">
+														<span>Cashier, JCPenney</span>
+													</a>
+												</div>
+											</div>
+									
+											<div class="timeline-content-item" data-timeline="hour-13">
+												<span style="font-size: 85%;"><a class="scrolly" onclick="currentSlide3(2)" href="#VolunteerExperience">8/18</a></span>
+												<div class="timeline-content-item-reveal">
+													<a class="scrolly" onclick="currentSlide2(8)" href="#WorkExperience">
+														<span>Volunteer, Mayo Clinic</span>
+													</a>
+												</div>
+											</div>
+									
+											<div class="timeline-content-item" data-timeline="hour-14">
+												<span style="font-size: 85%;"><a class="scrolly" onclick="currentSlide3(3)" href="#VolunteerExperience">8/18</a></span>
+												<div class="timeline-content-item-reveal">
+													<a class="scrolly" onclick="currentSlide3(3)" href="#VolunteerExperience">
+														<span>Volunteer, Children's Museum of Southern Minnesota</span>
+													</a>
+												</div>
+											</div>
+									
+											<div class="timeline-content-item" data-timeline="hour-15">
+												<span style="font-size: 85%;"><a class="scrolly" onclick="currentSlide2(7)" href="#WorkExperience">6/19</a></span>
+												<div class="timeline-content-item-reveal">
+													<a class="scrolly" onclick="currentSlide2(7)" href="#WorkExperience">
+														<span>Personal Shopper, HyVee</span>
+													</a>
+												</div>
+											</div>
+									
+											<div class="timeline-content-item" data-timeline="hour-16">
+												<span style="font-size: 85%;"><a class="scrolly" onclick="currentSlide2(6)" href="#WorkExperience">1/20</a></span>
+												<div class="timeline-content-item-reveal">
+													<a class="scrolly" onclick="currentSlide2(6)" href="#WorkExperience"> 
+														<span>Career Intern, Mayo Clinic</span>
+													</a>
+												</div>
+											</div>
+									
+											<div class="timeline-content-item" data-timeline="hour-18">
+													<span style="font-size: 85%;"><a class="scrolly" onclick="currentSlide(1)" href="#education">9/20</a></span>
+												<div class="timeline-content-item-reveal">
+													<a class="scrolly" onclick="currentSlide(1)" href="#education">
+														<span>Began attending the University of Minnesota</span>
+													</a>
+												</div>
+											</div>
+
+											<div class="timeline-content-item" data-timeline="hour-17">
+												<span style="font-size: 85%;"><a class="scrolly" onclick="currentSlide2(5)" href="#WorkExperience">5/21</a></span>
+												<div class="timeline-content-item-reveal">
+													<a class="scrolly" onclick="currentSlide2(5)" href="#WorkExperience">
+														<span>Barista, Caribou Coffeee</span>
+													</a>
+												</div>
+											</div>
+									
+											<div class="timeline-content-item" data-timeline="hour-19">
+												<span style="font-size: 85%;"><a class="scrolly" onclick="currentSlide2(4)" href="#WorkExperience">9/20</a></span>
+												<div class="timeline-content-item-reveal">
+													<a class="scrolly" onclick="currentSlide2(4)" href="#WorkExperience">
+														<span>Office Assistant, UMN</span>
+													</a>
+												</div>
+											</div>
+									
+											<div class="timeline-content-item" data-timeline="hour-20">
+												<span style="font-size: 85%;"><a class="scrolly" onclick="currentSlide3(1)" href="#VolunteerExperience">9/20</a></span>
+												<div class="timeline-content-item-reveal">
+													<a class="scrolly" onclick="currentSlide3(1)" href="#VolunteerExperience">
+														<span>STEM Tutor, Justice Page Middle School</span>
+													</a>
+												</div>
+											</div>
+									
+											<div class="timeline-content-item" data-timeline="hour-21">
+												<span style="font-size: 85%;"><a class="scrolly" onclick="currentSlide2(3)" href="#WorkExperience">1/22</a></span>
+												<div class="timeline-content-item-reveal">
+													<a class="scrolly" onclick="currentSlide2(3)" href="#WorkExperience">
+														<span>Teaching Assistant, UMN</span>
+													</a>
+												</div>
+											</div>
+									
+											<div class="timeline-content-item" data-timeline="hour-22">
+												<span style="font-size: 85%;"><a class="scrolly" onclick="currentSlide2(2)" href="#WorkExperience">2/22</a></span>
+												<div class="timeline-content-item-reveal">
+													<a class="scrolly" onclick="currentSlide2(2)" href="#WorkExperience">
+														<span>Student Web Developer, UMN</span>
+													</a>
+												</div>
+											</div>
+									
+											<div class="timeline-content-item" data-timeline="hour-23">
+												<span style="font-size: 85%;"><a class="scrolly" onclick="currentSlide2(1)" href="#WorkExperience">5/22</a></span>
+												<div class="timeline-content-item-reveal">
+													<a class="scrolly" onclick="currentSlide2(1)" href="#WorkExperience">
+														<span>SWE Intern, Allstate Insurance</span>														
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
 									<!-- Intro paragraph -->
 									<header>
-										<img style="width:100%; padding-bottom: 3rem" src="images/jennie_intro.jpg">
+										<img style="width:100%; padding-top: 3rem; padding-bottom: 3rem" src="images/jennie_intro.jpg">
 									</header>
 									<!-- <header>
 									<p><span class="image right"><img src="images/jennie.JPG" alt="" /></span>
@@ -68,19 +218,22 @@
 									<li><a href="images/jennie_lim_resume.pdf" class="button large" target="_blank">See Resume</a></li>
 								</ul>
 							</article>
+							<ul class="actions" style="border-top:none; padding:0;">
+								<li><a href="#header" id="topButton" class="button icon solid solo fa-arrow-up scrolly">Continue</a></li>
+							</ul>
 
 							<!-- CV -->
 							<article class="post featured">
 								<header class="major">
-									<h2 id = "CV">CV</h2>
+									<h2 id = "CV" class="anchor">CV</h2>
 									<div class="box">
-										<span><b>Skip to: &nbsp;</b> <a class="scrolly" href = "#education"> Education </a>&nbsp; ♡ &nbsp;<a class="scrolly" href = "#Skills"> Skills </a> &nbsp; ♡ &nbsp; <a class="scrolly" href = "#WorkExperience"> Work Experience </a> &nbsp; ♡ &nbsp; <a class="scrolly" href = "#VolunteerExperience"> Volunteer Experience </a> &nbsp; ♡ &nbsp; <a class="scrolly" href = "#Hobbies"> Hobbies </a></span>
+										<span><subtitle>Skip to: &nbsp;</subtitle> <a class="scrolly" href = "#education"> Education &nbsp; </a><pi class="fa-solid fa-heart fa"></pi><a class="scrolly" href = "#Skills"> &nbsp; Skills &nbsp; </a><pi class="fa-solid fa-heart fa"></pi><a class="scrolly" href = "#WorkExperience"> &nbsp; Work Experience &nbsp; </a> <pi class="fa-solid fa-heart fa"></pi><a class="scrolly" href = "#VolunteerExperience"> &nbsp; Volunteer Experience </a></span>
 									</div>
 								
 								</header>
 								<header>
 								<!-- EDUCATION -->
-								<h2> <a class="scrolly" id = "education" href = "#CV">Education</a></h2>
+								<h2> <a class="scrolly anchor" id = "education" href = "#CV">Education</a></h2>
 								<img style="width:20%;" src="images/education.jpg">
 
 									<div>
@@ -89,7 +242,7 @@
 									<div class="slideshow-container">
 										<!-- UMN -->
 										<div class="fade mySlides">
-											<h3 style="margin:0; float: left"><a target="_blank" href="images/jennie_lim_cs_transcript.pdf">UNIVERSITY OF MINNESOTA, TWIN CITIES</a></h3>
+											<h3 id="UMN" style="margin:0; float: left"><a target="_blank" href="images/jennie_lim_cs_transcript.pdf">UNIVERSITY OF MINNESOTA, TWIN CITIES</a></h3>
 											<h3 style="margin:0; float: right">SEPT '20 - MAY '24</h3>
 											<p style="margin:0; clear:both; float: left"><subtitle>Computer Science B.S.</subtitle></p>
 											<p style="margin:0; float: right"><subtitle>Minneapolis, Minnesota</subtitle></p>
@@ -244,7 +397,7 @@
 
 											</li>										
 											<li><subtitle>Technologies Used:</subtitle> 
-												<p style="margin:0">↳ &nbsp; Python, Command line arguments on terminal, Zoom, Gradescope, Google Docs, and Google Sheets</p>
+												<p style="margin:0">↳ &nbsp; Python, Command line tools, Zoom, Gradescope, Google Docs, and Google Sheets</p>
 											</li>	
 											<span id="dots3"></span><span id="more3">									
 											<li><subtitle>Takeaways:</subtitle> 
@@ -440,37 +593,12 @@
 										<span class="dot3" onclick="currentSlide3(3)"></span>
 									</div>
 								</header>
-
-								<hr id = "Hobbies">
-
-								<!-- HOBBIES -->
-								<header class="other-container">
-									<h2><a class="scrolly" href = "#CV" id = "Hobbies">Hobbies</a></h2>
-									<ul style="text-align: left;">
-										<li>Playing classical piano 
-											<p style="margin:0">♡ &nbsp; favorites - Clair de Lune, Moonlight Sonata, and John Williams' film scores</p>
-										</li>
-										<li>Going to museums and looking at art
-											<p style="margin:0">♡ &nbsp; favorites - oil paintings, especially ones by Claude Monet and Vincent van Gogh </p>
-										</li>
-										<li>Traveling with family and eating good food
-											<p style="margin:0">♡ &nbsp; recent trips - Las Vegas, Washington D.C., Atlanta, Los Angeles, Virginia, New York, Chicago</p>
-										</li>
-										<li>Watching movies 
-											<p style="margin:0">♡ &nbsp; favorites - Ratatouille, Spiderman, Harry Potter, and 90's Rom-Coms</p>
-										<li>Watching shows</li>
-											<p style="margin:0">♡ &nbsp; favorites - Parks and Rec, New Girl, Friends, All of Us are Dead, and Bridgerton</p>
-										</li>
-										<li>Hiking, going for walks, yoga, pilates, rollerblading, and rockclimbing</li>
-									</ul>
-
-								</header>
 							</article>
 				
 					</div>
 
 			<div id="copyright">
-				<ul><li><a href="#header">About Me</a></li><li><a href="generic.html">Projects</a></li><li><a href="elements.html">Recognition and Awards</a></li><li>Contact Me @ <a href="mailto: JennieGLim1@gmail.com">JennieGLim1@gmail.com</a></li></ul>
+				<ul><li><a class="scrolly" href="#header">About Me</a></li><li><a href="generic.html">Projects</a></li><li><a href="elements.html">Recognition and Awards</a></li><li>Contact Me @ <a href="mailto: JennieGLim1@gmail.com">JennieGLim1@gmail.com</a></li></ul>
 			</div>
 			
 		<!-- Scripts -->
@@ -482,6 +610,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    		<script src="assets/js/index.js"></script>
 
 	</body>
 </html>
