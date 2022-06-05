@@ -17,6 +17,8 @@
 .anim-typewriter{
 	animation: typewriter 1s steps(10) 1.5s 1 normal both,
 			   blinkTextCursor 500ms steps(44) 7 normal;
+	white-space: nowrap; 
+	border-right: 2px solid transparent;
   }
   @keyframes typewriter{
 	from{width: 0;}
