@@ -1,6 +1,21 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
+@media screen and (min-height: 775px) {
+	.line-1{
+	    position: absolute;
+		/* top: 50%;   */
+		width: 6em;
+		/* margin: 0 auto; */
+		border-right: 2px solid rgba(255,255,255,.75);
+		font-size: 180%;
+		text-align: center;
+		white-space: nowrap;
+		overflow: hidden;
+		transform: translateY(-50%); 
+	}
+}
+
 .line-1{
 /*     position: absolute; */
     /* top: 50%;   */
