@@ -9,7 +9,7 @@ a > span:hover {
 
 .timeline-wrapper {
   display: block;
-  width: 90%;
+  width: 100%;
   height: 5rem;
   position: relative;
   color: black;
@@ -18,7 +18,8 @@ a > span:hover {
 }
 .timeline-wrapper .timeline-line {
   display: block;
-  width: 93.9%;
+  /* width: 93.9%; */
+  width:100%;
   height: 1px;
   background: pink;
   position: absolute;
@@ -26,8 +27,8 @@ a > span:hover {
   -webkit-box-shadow: 0 0 1px black;
   -moz-box-shadow: 0 0 1px black;
   box-shadow: 0 0 1px black;
-  left: 3%;
-  margin-left: 2.5px;
+  /* left: 3%;
+  margin-left: 2.5px; */
 
 }
 .timeline-wrapper .timeline-content-day {
@@ -35,11 +36,11 @@ a > span:hover {
 }
 .timeline-wrapper .timeline-content-item {
   background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
-  width: 6%;
+  width: 6.8%;
   display: inline-block;
   position: relative;
   height: 100%;
-  margin-right: -5px;
+  /* margin-right: -5px; */
   -webkit-transition: width .5s;
   -moz-transition: width .5s;
   -o-transition: width .5s;
@@ -107,7 +108,7 @@ a > span:hover {
   position: absolute;
   width: 250%;
   margin-left: -75%;
-  bottom: -2rem;
+  /* bottom: -2rem; */
   left: 0;
   /* font-family: serif; */
   /* font-size: 1.3em; */
@@ -118,12 +119,12 @@ a > span:hover {
   /* text-shadow: 0 0 2px rgba(0, 0, 0, 0.5), 0 0 1px black; */
 }
 .timeline-wrapper .timeline-content-item .timeline-content-item-reveal a span:after {
-  margin-left: .3em;
+  /* margin-left: .3em; */
   /* white-space: pre-wrap; */
 }
 .timeline-wrapper .timeline-content-item.active {
   font-weight: 500;
-  font-size: 110%;
+  /* font-size: 100%; */
   width: 10%;
 
 }
@@ -131,26 +132,26 @@ a > span:hover {
   display: block;
 }
 
-@media screen and (max-width: 650px) {
-  div.tl {
+@media screen and (max-width: 935px) {
+  .tl {
     display: none;
   }
 }
 
 @media screen and (max-width: 850px) {
-  div.tl {
+  .tl {
     font-size: 90%;
   }
 }
 
 @media screen and (max-width: 750px) {
-  div.tl {
+  .tl {
     font-size: 80%;
   }
 }
 
 @media screen and (max-width: 700px) {
-  div.tl {
+  .tl {
     font-size: 75%;
   }
 }

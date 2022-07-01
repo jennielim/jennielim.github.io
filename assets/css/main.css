@@ -293,8 +293,8 @@ input, select, textarea {
 
 subtitle {
 	/* font-family: "Source Sans Pro", Helvetica, sans-serif; */
-	font-family: "HelveticaNeue-Light";
-	font-weight: 600;
+	font-family: "HelveticaNeue";
+	/* font-weight: 600; */
 	/* text-decoration: underline;
 	text-underline-offset: 2px; */
 	font-size: 1rem;
@@ -424,10 +424,20 @@ pi {
 		margin: 0 0 1rem 0;	
 	}
 
-	h3, h4, h5, h6 {
+	h3 {
+		/* font-family: "Source Sans Pro", Helvetica, sans-serif; */
+		font-family: "HelveticaNeue";
+		/* font-weight: 600; */
+		line-height: 1.5;
+		letter-spacing: 0.075em;
+		text-transform: uppercase;
+		margin: 0 0 1rem 0;
+	}
+
+	h4, h5, h6 {
 		/* font-family: "Source Sans Pro", Helvetica, sans-serif; */
 		font-family: "HelveticaNeue-Light";
-		font-weight: 600;
+		/* font-weight: 600; */
 		line-height: 1.5;
 		letter-spacing: 0.075em;
 		text-transform: uppercase;
@@ -4019,7 +4029,7 @@ pi {
 	}
 
 		#main > * {
-			padding: 4rem 4rem 2rem 4rem ;
+			padding: 2rem 2rem 2rem 2rem ;
 			border-top: solid 2px #eeeeee;
 			margin: 0;
 		}
@@ -4033,7 +4043,7 @@ pi {
 		}
 
 		#main > .post {
-			padding: 8rem 8rem 6rem 8rem ;
+			padding: 6rem 6rem 6rem 6rem ;
 		}
 
 			#main > .post header.major > .date {
@@ -4053,7 +4063,7 @@ pi {
 			@media screen and (max-width: 1280px) {
 
 				#main > .post {
-					padding: 6rem 4rem 4rem 4rem ;
+					padding: 2rem 4rem 4rem 4rem ;
 				}
 
 			}
@@ -4061,7 +4071,7 @@ pi {
 			@media screen and (max-width: 736px) {
 
 				#main > .post {
-					padding: 4rem 2rem 2rem 2rem ;
+					padding: 2rem 2rem 2rem 2rem ;
 				}
 
 					#main > .post header.major > .date {
